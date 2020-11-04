@@ -42,6 +42,7 @@ h2 {
   line-height: 42px;
   letter-spacing: 1px;
   padding-bottom: 12px;
+  text-align: center;
 }
 
 h3 {
@@ -55,6 +56,8 @@ h5 {
   color: #ffa400;
   line-height: 28px;
   letter-spacing: 2px;
+  font-size:18px;
+  padding-left: 15px;
 }
 
 p {
@@ -90,42 +93,51 @@ p {
     box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.04);
     margin: 0 !important;
   }
+
 .navbar-default .navbar-brand {
   font-size: 20px;
   font-weight: bold;
   margin: 0;
   }
+
 .navbar-default li {
   margin: 15px 20px;
 }
+
 .navbar-default .navbar-nav li a {
     color: #303030;
     font-size: 12px;
     font-weight: bold;
     padding: 0px;
   }
+
 .navbar-default .navbar-nav li a:hover {
     color: #ffa400;
   }
+
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
   color: #303030;
   background-color: transparent;
 }
+
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: #ffa400;
   background-color: transparent;
 }
+
 .navbar-default .navbar-toggle {
      border: none;
      padding-top: 12px;
   }
+
 .navbar-default .navbar-toggle .icon-bar {
     background: #ffa400;
     border-color: transparent;
   }
+
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus { 
   background-color: transparent;
@@ -203,7 +215,9 @@ p {
 }
 
 #about .about-des {
-  	padding: 65px;
+  	padding: 10px;
+    padding-left: 25px;
+    
 }
 
 #about .about-des h3 {
@@ -215,8 +229,8 @@ p {
 }
 
 #about .about-des p {
-	font-size: 16px;
-	line-height: 32px;
+	font-size: 13px;
+	line-height: 18px;
 }
 
 
@@ -371,10 +385,12 @@ footer a:hover {
   padding: 0;
   margin: 0;
 }
+
 .social-icon li {
   list-style: none;
   display: inline-block;
 }
+
 .social-icon li a {
   background: #3c3c3c;
   border-radius: 100%;
@@ -388,68 +404,117 @@ footer a:hover {
   transition: all 0.4s ease-in-out;
   margin-right: 2px;
 }
+
 .social-icon li a:hover {
   background: #ffa400;
 }
 
-
-
-@media (max-width: 1280px) {
-	#about .about-des {
-		padding: 40px;
-	}
-	#about .about-des h3 {
-		font-size: 20px;
-	}
-	
-	#about .about-des h4 {
-		font-size: 16px;
-	}
-	
-	#about .about-des p {
-		font-size: 13px;
-		line-height: 24px;
-	}
+#about .about-des {
+	padding: 10px;
+  padding-left: 25px;
 }
+
+#about .about-des h3 {
+	font-size: 20px;
+}
+	
+#about .about-des h4 {
+	font-size: 1px;
+}
+	
+#about .about-des p {
+	font-size: 13px;
+	line-height: 18px;
+}
+
 /* mobile responsive section styles
 /* ========================================== */
-@media (max-width: 768px) {
-  h1 {
-    font-size: 53px;
-  }
-  #counter .counter-item {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  
+h1 {
+  font-size: 53px;
 }
 
-@media (max-width: 650px) {
-  h1 {
-    font-size: 40px;
-  }
+#counter .counter-item {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-@media (max-width: 450px) {
-  h1 {
-    font-size: 28px;
-    line-height: 38px;
-  }
-  #home h5 {
-    font-size: 11px;
-  }
-  #home .btn {
-    display: inline-block;
-    padding: 14px 32px;
-  }
+#home h1 {
+  font-size :60px;
 }
 
-@media (max-width: 375px) {
-  h1 {
-    font-size: 24px;
-    line-height: 34px;
-  }
-  #home h5 {
-    font-size: 9px;
-  }
+#footer p {
+  width:100%;
+  text-align:center;
+  padding:0px;
 }
+
+#about .about-des p {
+  font-size: 15px;
+  line-height: 35px;
+  padding-right:20px;
+  padding-left:12px;
+  text-align: justify;
+}
+
+  #footer h2 {
+  text-align: center;
+  }
+
+}
+
+  	.graystrip {
+   	 display: block !important;
+  }
+  	.articlemobile {
+   	 display:none !important;
+  } 
+
+@media (max-width:1300px) {
+  #home h1 {
+  font-size: 40px;
+  }
+  #about .about-des p {
+    font-size: 14px;
+    line-height: 25px;
+    padding-right:20px;
+    padding-left:12px;
+    text-align: justify;
+  }
+  #about .about-des h3 {
+   	padding-left:12px;
+  }
+  	.graystrip {
+   	 display: block !important;
+  }
+  	.articlemobile {
+   	 display:none !important;
+  } 
+}  
+@media (max-width:769px) {
+	#testimonial, #blog, #counter, #contact {
+  	padding-top: 70px;
+  	padding-bottom: 120px;
+  }
+   .graystrip {
+   	display: none !important;
+  }
+  	.articlemobile {
+    display:block !important;
+  } 
+}
+@media (max-width:376px){
+ .graystrip {
+  	display: none !important;
+  }
+  .articlemobile {
+   	display:block !important;
+  } 
+}
+
+
+
+
+
+
+
+ 
